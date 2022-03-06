@@ -1,12 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
 Category.init(
   {
-    // columns: id, category_name
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,

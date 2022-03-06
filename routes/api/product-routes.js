@@ -29,7 +29,6 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
-    // find a single product by its `id`, include its associated category and tag data
     Product.findOne({
         where: {
             id: req.params.id
@@ -82,9 +81,8 @@ router.post('/', (req, res) => {
         });
 });
 
-// update product
+// update product data
 router.put('/:id', (req, res) => {
-    // update product data
     Product.update(req.body, {
         where: {
             id: req.params.id,

@@ -5,7 +5,6 @@ class Product extends Model {}
 
 Product.init(
   {
-      // columns: id, product_name, price, stock, category_id
       id: {
           type: DataTypes.INTEGER,
           allowNull: false,
